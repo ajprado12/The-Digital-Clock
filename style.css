@@ -1,0 +1,12 @@
+.container {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+#Clock {
+  text-align: center;
+  font-size: 120px;
+  vertical-align: top;
+  padding-top: 5px;
+}
