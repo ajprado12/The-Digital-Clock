@@ -75,10 +75,18 @@ function Day (day){
 function time () {
     //This sets both Date & Time
     var today = new Date;
-    document.getElementById('Clock').innerHTML=today;
+
     
     
     // We need to set time HH:MM:SS
+    var hour = today.getHours();
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
+
+    
+    var currentTime = hour + ":" + minutes + ":" + seconds;
+    document.getElementById("Clock").innerHTML=currentTime;    
+
     
     
     // We need to set date Day,Month Day year
@@ -98,13 +106,7 @@ function time () {
     var now = newDay +" " +newMonth +" "+ date +" "+ year;
     document.getElementById("Date").innerHTML=now;
 
-    var hour = today.getHours();
-    var minutes = today.getMinutes();
-    var seconds = today.getSeconds();
-
-    var currentTime = hour + " " + minutes + " " + seconds;
-    document.getElementById("Time").innerHTML=currentTime;
-
+  
 
 }
 

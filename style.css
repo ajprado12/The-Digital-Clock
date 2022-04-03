@@ -6,12 +6,16 @@
 
 #Clock {
   text-align: center;
-  font-size: 115px;
+  font-size: 200px;
   vertical-align: top;
   padding-top: 5px;
 }
 
 #Date {
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
+}
+
+.digi {
+  font-family: 'Orbitron', sans-serif;
 }
