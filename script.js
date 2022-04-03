@@ -1,3 +1,15 @@
+//Time 
+
+
+
+
+
+
+
+
+
+
+
 function Month (month){
     if (month==0){
         return "January"
@@ -85,8 +97,16 @@ function time () {
     
     var now = newDay +" " +newMonth +" "+ date +" "+ year;
     document.getElementById("Date").innerHTML=now;
-}
 
+    var hour = today.getHours();
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
+
+    var currentTime = hour + " " + minutes + " " + seconds;
+    document.getElementById("Time").innerHTML=currentTime;
+
+
+}
 
 
 setInterval(time, 1000);
