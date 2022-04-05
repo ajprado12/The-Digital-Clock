@@ -83,7 +83,7 @@ function time () {
     var hour = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
-    var tod = ampm();
+    var tod = ampm(hour);
     var Hour = newHour(hour);
 
     if (Hour < 10) {
@@ -111,7 +111,7 @@ function time () {
     
     var newDay = Day(day);
         
-    var now = newDay +"," + newMonth +" "+ date +" "+ year;
+    var now = newDay +", " + newMonth +" "+ date +" "+ year;
     document.getElementById("Date").innerHTML=now;
 
 }
