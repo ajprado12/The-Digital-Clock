@@ -67,13 +67,20 @@ function Day (day){
     }
 }
 
-function ampm () {
-    if (hour = 0-11) {
-        return "A.M."
-    } else if (hour = 12-23) {
-        return "P.M."
+function newHour (hour) {
+    if (hour > 12) {
+        return hour - 12;
+    } return hour;
+}
+
+function ampm (hour) {
+    if (hour < 12) {
+        return "AM"
+    } else {
+        return "PM"
     }
 }
+
 
 //update real time
 function time () {
@@ -86,12 +93,23 @@ function time () {
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
     var tod = ampm();
-    
-    
-    var currentTime = hour + ":" + minutes + ":" + seconds + " " + tod;
-    document.getElementById("Clock").innerHTML=currentTime;    
+    var Hour = newHour(hour);
 
-   
+    if (Hour < 10) {
+        Hour = "0" + Hour;
+    }
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    
+    var currentTime = Hour + ":" + minutes + ":" + seconds + " " + tod;
+    document.getElementById("Clock").innerHTML=currentTime;  
     
     
     // We need to set date Day,Month Day year
