@@ -2,7 +2,7 @@
 
 A current digital clock made with HTML, CSS, Javascript
 
-You can see the current time here
+You can see the current time [Here](https://ajprado12.github.io/The-Digital-Clock/)
 
 
 ![image](https://user-images.githubusercontent.com/102049335/161754150-bf6ee1c3-52cb-45d3-9a31-1644b1df585a.png)
