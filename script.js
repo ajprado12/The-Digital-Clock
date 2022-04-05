@@ -38,11 +38,6 @@ function Month (month){
     }
 }
 
-
-
-
-
-
 function Day (day){
     if (day==0){
         return "Sunday"
@@ -70,6 +65,8 @@ function Day (day){
 function newHour (hour) {
     if (hour > 12) {
         return hour - 12;
+    } else if (hour == 00) {
+        return hour + 12;
     } return hour;
 }
 
@@ -81,14 +78,8 @@ function ampm (hour) {
     }
 }
 
-
-//update real time
 function time () {
-    //This sets both Date & Time
     var today = new Date;
-    
-    
-    // We need to set time HH:MM:SS
     var hour = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
@@ -111,24 +102,17 @@ function time () {
     var currentTime = Hour + ":" + minutes + ":" + seconds + " " + tod;
     document.getElementById("Clock").innerHTML=currentTime;  
     
+    var day = today.getDay();
+    var year = today.getFullYear();
+    var month = today.getMonth();
+    var date = today.getDate();
     
-    // We need to set date Day,Month Day year
-    var day = today.getDay(); //gets the day of the week
-    var year = today.getFullYear(); //gets the year as a number
-    var month = today.getMonth(); //gets the month as a number
-    var date = today.getDate(); //gets the date as a number
-    
-    //we need to convert numbers to strings for month
     var newMonth = Month(month);
     
-    //strings for day
     var newDay = Day(day);
         
-    //new date
     var now = newDay +"," + newMonth +" "+ date +" "+ year;
     document.getElementById("Date").innerHTML=now;
-
-  
 
 }
 
