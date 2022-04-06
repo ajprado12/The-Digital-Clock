@@ -10,6 +10,6 @@ You can see the current time [Here](https://ajprado12.github.io/The-Digital-Cloc
 Summary
 
 When I first started to learn HTML and CSS, Javascript seemed to far and complex to decipher. Having worked on this 
-digital clock app for a couple weeks now, I can say it is definitely a challenge. A challenege that is rewarding and leaves you wanted more.
+digital clock app for a couple weeks now, I can say it is definitely a challenge. A challenege that is rewarding and leaves you wanting more.
 A building block that will serve its purpose.
 
